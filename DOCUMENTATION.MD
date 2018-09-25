@@ -1,6 +1,6 @@
 ## Database
 
-The app uses `postgresql`. To set up database, use `rails db:setup` and then `rails db:migrate`.
+The app uses PostGreSQL. To set up database, use `rails db:setup` and then `rails db:migrate`.
 
 ## Model and Controller
 
@@ -16,7 +16,7 @@ The tasks will use existing Ruby libraries such as `'open-uri`, `'net/http'`and 
 
 ## Gems used
 
-External gems used in this app include `jquery-rails` and `bootstrap-sass` for styling, `slim-rails` for markup and `kaminari` for pagination.
+External gems used in this app include `pg` for using PostgreSQL, `jquery-rails` and `bootstrap-sass` for styling, `slim-rails` for markup and `kaminari` for pagination.
 
 ## Javascript
 
