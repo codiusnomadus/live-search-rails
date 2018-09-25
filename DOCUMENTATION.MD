@@ -4,7 +4,7 @@ The app uses PostGreSQL. To set up database, use `rails db:setup` and then `rail
 
 ## Model and Controller
 
-Within the `Recipe` model, the `search` scope is set using `ILIKE` to filter results in a case-insensitive manner. This is called from the `index` action of the `RecipesController`.
+Within the `Recipe` model, the `search` scope is set using `ILIKE` to filter results in a case-insensitive manner. This is called from the `index` action of the `RecipesController`. This task should be run as a cron job every 15 minutes on the production server.
 
 ## Rake Task
 
