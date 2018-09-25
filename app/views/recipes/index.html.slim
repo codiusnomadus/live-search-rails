@@ -1,0 +1,11 @@
+h1[hidden] Recipes
+
+= form_tag recipes_path, method: :get, id: 'recipe-search' do
+  .input-group
+    = text_field_tag :search, params[:search], class: "input-lg form-control", placeholder: "Start searching recipes..."
+    span.input-group-btn
+      = submit_tag "Search", name: nil, class: "btn btn-lg btn-primary"
+
+br
+
+#recipes

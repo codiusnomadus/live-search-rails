@@ -1,0 +1,14 @@
+ul.media-list.recipes
+  - @recipes.each do |recipe|
+    li.recipe_item.media
+      .media-left
+        = link_to recipe.href, target: :_blank do 
+          = image_tag recipe.thumbnail
+      .media-body
+        h3 = link_to recipe.href, target: :_blank do
+          = recipe.title
+          '
+          small
+            span.glyphicon.glyphicon-new-window
+
+= paginate @recipes
